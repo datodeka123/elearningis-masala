@@ -1,0 +1,172 @@
+print(x)-bewdavs
+paste(x,y)-aertebs sityvebs*
+class(x)-gvawvdis cvladis tips
+max(a,b,c)-udidesis povna
+min(a,b,c)-umciresis povna
+sqrt(a)-kvadratuli fesvi
+abs(a)-modulis povna
+ceiling(a)-dadebiti damrgvaleba
+floor(a)-uaryofiti damrgvaleba
+cat(text)-xazebs gawyvets ise rogorc codshia
+nchar(text)-simboloebis raodenobas itvlis
+grepl("H","Hello")-amowmebs pirvelis arsebobas meoreshi
+
+if(a>b){...}else{...}-igivea
++-*/
+^-awarmoeba
+%%-nashtis povna
+%/%-ganayofs uaryofitad amrgvalebs
+
+1:10-qmnis ricxvta mwkrivs 1 dan 10is chatvlit
+5%in%1:10-amowmebs mimdevrobashi aris tu ara 5
+
+break-igive
+next-continue_s nacvlad
+
+for(x in 1:10){print(x)}-loopebi igivea
+
+myFunction=function(PROP){print(PROP)} -function_is sheqmna, tan vawvdit props*
+myFunction("dato") -function_is gamodzaxeba, gadavcemt strings
+
+
+------------------------
+Vectors:
+
+x=1:10-mimdevroba
+x=1.5:9.5-mimdevroba
+x=c(1,2,3)-cifrebi
+x=c(TRUE,FALSE)-booleans
+x=c("dato","ani")-strings
+
+x[1]-gamoitans pirvel elements
+x[c(1,3)]-gamoitans pirvel da mesame elements
+x[c(-3)]-gamoitans yvelas garda mesamisa
+
+x=rep(c(1:3), each=3)-gaimeorebs 1 dan 3_is chatvlit yvelas 3jer*
+x=rep(c(1:3), times=3)-gaimeorebs titon mimdevrobas
+x=rep(c(1:3), times=c(1,2,3))-satitaod mietiteba ganmeorebitoba
+
+x=seq(from=0,to=20,by=1)-mimdevroba 1 dan 20 is chatvlit 1 is bijit*
+
+
+--------------------------------------------
+Lists:
+
+x=list(1,2,3,4,5)-siis sheqmna*
+x[1]-pirveli elementis povna
+length(x)-elementta raodenoba*
+
+1%in%x-amowmebs aris tu ara siashi 1
+
+append(x,6)-boloshi daemateba 6
+append(x,4.5,after=4)-daemateba me4 elementis shemdeg 4.5
+
+x=x[-1]-tavana elementis moshoreba
+
+(x)[3:5]-daabrunebs me3,me4,me5 elementebs
+
+c(list1,list2)-siebis sheerteba*
+
+
+-----------------------------------------
+Matrices:
+
+x=matrix(c(1:6), nrow=3, ncol=2)-qmnis 3 riga da 2 svwta matricas [1,6] mimdevrobit*
+x[1,2]-gamoitans pirveli rigis meore svetis elements
+
+x[1,]-gamoitans mtel pirvel rigs
+x[,1]-gamoitans mtel pirvel svets
+
+x[c(1,2),]-gamoitans mtel pirvel da meore rigs
+x[,c(1,2)]-gamoitans mtel pirvel da meore svets
+
+cbind(matrix1,c(7,8,9))-svetis damateba
+rbind(matrix1,c(7,8,9))-rigis damateba
+
+x[-c(1), -c(1)]-pirveli rigis da svetis moshoreba
+
+5%in%x-edzebsaris tu ara 5 matricashi
+
+dim(x)-gvadzlevs rigis da svetis raodenobas
+
+length(x)-gvadzlevs elementebis raodenobas matricashi
+
+
+
+----------------------------------------------
+Arrays:
+
+newArray=array(x, dim=c(4,3,2))-sheqmnis 2 ganzomilebian 4 rigis da 3 svetis mqone arrays*
+
+newArray[1,2,3]-gamoitans me3 ganzomilebis 1li rigis da me2 svetis elements
+
+newArray[c(1),,1]-gamoitans 1li ganzomilebis mtel 1li rigis elementebs
+newArray[,c(1),1]-gamoitans 1li ganzomilebis mtel 1li svetis elementebs
+
+%in%-dzebna ucvlelia
+dim(newArray)-gamoaqve rigis svetis da ganzomilebis raodenoba
+length(newArray)-gamoaqvs elementta raodenoba
+
+for(x in newArray){print(x)}-dabewdavs elementebs satitaod
+
+
+
+------------------------------------------------
+Data frames:
+
+Data_Frame=data.frame(vector1,vector2,vector3)-cxrilis sheqmna
+
+summary(Data_Frame)-gvawvdis statistikur monacemebs*
+
+Data_Frame[1]-gamoitans 1l svets anu 1l veqtors
+Data_Frame[["vector1"]]-gamoitans 1l svets 
+Data_Frame$vector1-gamoitans 1l svets
+
+Data_Frame2=rbind(Data_Frame, c(x,y,z))-daamatebs rigs
+Data_Frame2=cbind(Data_Frame, steps=c(x,y,z))-daamatebs svets saxelad steps
+
+Data_Frame2=Data_Frame[c(-1),c(-1)]-washlis 1l rigs da svets
+dim(Data_Frame)-gvadzlevs rigis da svetis raodenobas
+ncol(Data_Frame)-svetis raodenoba
+nrow(Data_Frame)-rigis raodenoba
+
+length(Data_Frame) igivea aq rac ncol(Data_Frame)
+
+rbind() da cbind() aertebs aseve 2 cxrilsac shesabamisad
+
+
+
+-----------------------------------------------------------
+Factors:
+
+factor(vectori1)-gvadzlevs 1)mtel vectors da 2)unikalur da dalagebul vectors*
+levels(vectori1)-mxolod unikalur da dalagebul vectors*
+length(vectori1)-gvadzlevs elementta raodenobas
+
+
+
+
+------------------------------------------------------------
+Plot:
+
+plot(vectori1,vectori2)-aagebs grafiks
+plot(vectori1,vectori2,main="title",xlab="x",ylab="y")-grafikis gamartva
+plot(vectori1,vectori2, type="l", col="red", cex=2)-feris, zomis da tipis mititeba*
+
+pch=0dan25chatvlit-atributze cifrebze igebs sxvadasxva figuras
+
+
+
+--------------------------------------------------------------
+Line:
+
+
+
+
+
+
+
+
+
+
+
